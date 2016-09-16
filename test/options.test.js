@@ -1,4 +1,4 @@
-var should = require('should');
+require('should');
 var fo = require('../').find_options;
 function find_options() {
   return fo(arguments);

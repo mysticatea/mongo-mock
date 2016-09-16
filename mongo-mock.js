@@ -61,6 +61,7 @@ function find_options(args) {
     case "object,object,number,number,number,function":
       options.timeout = args[4];
     //selector, fields, skip, limit, callback?
+    // fallthrough
     case "object,object,number,number":
     case "object,object,number,number,function":
       options.skip = args[2];

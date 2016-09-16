@@ -1,4 +1,4 @@
-var should = require('should');
+require('should');
 var ObjectId = require('bson-objectid');
 var id = ObjectId();
 var mongo = require('../');
