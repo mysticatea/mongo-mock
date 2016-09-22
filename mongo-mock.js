@@ -5,7 +5,7 @@ module.exports = {
   set max_delay(n) { delay = Number(n) || 0; },
   // pretend we are doing things async
   asyncish: function asyncish(callback) {
-    setTimeout(callback, Math.random()*(delay));
+    process.nextTick(callback);
   },
   find_options: find_options,
   get MongoClient() { return require('./lib/mongo_client.js') }
